@@ -15,12 +15,12 @@ func main() {
 	// Load chart
 	chrt, err := loader.Load("resources/dummy")
 	if err != nil {
-		log.Panicf("error while loading chart: %s", err)
+		log.Panicf("error while loading the chart: %s", err)
 	}
 
 	err = chrt.Validate()
 	if err != nil {
-		log.Panicf("error while validatiing the chart: %s", err)
+		log.Panicf("error while validating the chart: %s", err)
 	}
 
 	// Prepare values

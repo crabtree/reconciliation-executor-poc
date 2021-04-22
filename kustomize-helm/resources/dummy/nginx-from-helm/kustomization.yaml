@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: default
+
+helmChartInflationGenerator:
+- chartHome: ../../../../helm/resources/
+  chartName: dummy
+  releaseName: nginx
+  values: ../../../../helm/resources/dummy/landscape-dev.yaml

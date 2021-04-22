@@ -25,7 +25,8 @@ func main() {
 
 	// Prepare values
 	overrides := values.Options{
-		ValueFiles: []string{"resources/dummy/landscape-dev.yaml"},
+		//ValueFiles: []string{"resources/dummy/landscape-dev.yaml"},
+		ValueFiles: []string{"resources/dummy/landscape-prod.yaml"},
 	}
 	settings := cli.New()
 	vals, err := overrides.MergeValues(getter.All(settings))

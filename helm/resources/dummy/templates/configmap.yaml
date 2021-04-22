@@ -1,0 +1,9 @@
+{{ if .Values.production }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data:
+  config.yaml: |
+{{ (.Files.Get "assets/config.yaml") | indent 4 }}
+{{ end }}

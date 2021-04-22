@@ -6,4 +6,4 @@ This repository contains the POC of the reconciliation executor logic, especiall
 
 The Kustomize approach renders output YAML using the customization and composition approach offered by the tool. Helm example, on the other hand, shows how we can use the tool to render the output YAML based on the chart using the dry-run mode of the install command.
 
-The directory named `kustomize-helm` presents hybrid approach. Kustomize is configured to run with Helm plugin and we use it to render the YAML frome the Helm Chart that is present in the Helm POC.
+The directory named `kustomize-helm` presents hybrid approach. Kustomize is configured to run with Helm plugin and we use it to render the YAML from the Helm Chart that is present in the Helm POC.

@@ -15,8 +15,8 @@ func main() {
 	kustomizer := krusty.MakeKustomizer(opts)
 
 	// Run Kustomize on the resources
-	res, err := kustomizer.Run(fs, "resources/dummy/landscapes/dev")
-	// res, err := kustomizer.Run(fs, "resources/dummy/bugfixes/bugfix-1")
+	res, err := kustomizer.Run(fs, "resources/landscapes/dev")
+	// res, err := kustomizer.Run(fs, "resources/bugfixes/bugfix-1")
 	if err != nil {
 		log.Panicf("error while calling Run on kustomizer: %s", err)
 	}

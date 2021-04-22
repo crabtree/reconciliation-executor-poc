@@ -23,7 +23,7 @@ func main() {
 	kustomizer := krusty.MakeKustomizer(opts)
 
 	// Run Kustomize on the resources
-	res, err := kustomizer.Run(fs, "resources/dummy/nginx-from-helm")
+	res, err := kustomizer.Run(fs, "resources/nginx-from-helm")
 	if err != nil {
 		log.Panicf("error while calling Run on kustomizer: %s", err)
 	}

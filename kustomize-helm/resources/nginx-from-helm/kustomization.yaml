@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: default
 
 helmChartInflationGenerator:
-- chartHome: ../../../../helm/resources/
+- chartHome: ../../../helm/resources/
   chartName: dummy
   releaseName: nginx
-  values: ../../../../helm/resources/dummy/landscape-dev.yaml
+  values: ../../../helm/resources/dummy/landscape-dev.yaml
